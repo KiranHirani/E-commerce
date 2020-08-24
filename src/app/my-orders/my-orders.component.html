@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of array[0]">
+            <td>{{order.value.shipping.firstName}}</td>
+            <td>{{order.value.dateCreated | date}}</td>
+            <td>
+                <a [routerLink]="['/my/orders/',order.key]">
+                View
+               </a>
+        </td>
+        </tr>
+    </tbody>
+</table>
+

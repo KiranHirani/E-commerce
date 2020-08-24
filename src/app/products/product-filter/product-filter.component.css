@@ -1,0 +1,5 @@
+.sticky-top
+{
+    top:100px;
+    /* to make the allcategories stay, as it gets hidden in the navbar */
+}
